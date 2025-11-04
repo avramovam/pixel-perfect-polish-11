@@ -3,22 +3,22 @@ export const Production = () => {
     {
       title: "Металлообработка",
       description: "Фрезерные и токарные станки с ЧПУ, карусельные работы",
-      image: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=800"
+      image: "src/images/chester-oates-gHY2Upbsjek-unsplash.jpg"
     },
     {
       title: "Штамповка",
       description: "Холодная и горячая штамповка, гидравлические прессы",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800"
+      image: "src/images/hans-westbeek-fimoFLchbuk-unsplash.jpg"
     },
     {
       title: "Лазерная резка",
       description: "Лазерные станки 4КВт, электроэрозионная обработка",
-      image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800"
+      image: "src/images/cemrecan-yurtman-qk2i7n39-B0-unsplash.jpg"
     },
     {
       title: "Сварка",
       description: "Сварка нержавеющей стали и титана, аттестованные специалисты",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800"
+      image: "src/images/rizky-nuriman-Ws8SCmDS9mw-unsplash.jpg"
     }
   ];
 

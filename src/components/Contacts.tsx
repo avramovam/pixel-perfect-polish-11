@@ -31,7 +31,8 @@ export const Contacts = () => {
       content: "+7 (812) 334-12-18",
       copyContent: "+78123341218",
       isLink: true,
-      href: "tel:+78123341218"
+      href: "tel:+78123341218",
+      isPhone: true // Добавляем флаг для телефона
     },
     {
       icon: Globe,
@@ -62,7 +63,7 @@ export const Contacts = () => {
                 {contactInfo.map((info, index) => (
                   <div
                     key={index}
-                    onClick={() => copyToClipboard(info.copyContent)}
+                    onClick={() => !info.isPhone && copyToClipboard(info.copyContent)} // Для телефона не копируем при клике на весь блок
                     className="flex items-start p-3 sm:p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 cursor-pointer"
                   >
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-ocean text-white rounded-2xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0 shadow-lg">
@@ -75,9 +76,12 @@ export const Contacts = () => {
                           href={info.href}
                           className="text-xs sm:text-sm md:text-base text-gray-700 hover:text-ocean transition-colors break-words"
                           onClick={(e) => {
-                            e.stopPropagation();
-                            copyToClipboard(info.copyContent);
-                            e.preventDefault();
+                            if (!info.isPhone) {
+                              e.stopPropagation();
+                              copyToClipboard(info.copyContent);
+                              e.preventDefault();
+                            }
+                            // Для телефона allow default behavior (звонок)
                           }}
                         >
                           {info.content}
@@ -92,15 +96,29 @@ export const Contacts = () => {
             </div>
 
             <div className="rounded-3xl overflow-hidden shadow-2xl h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=30.293594%2C59.996842&mode=search&oid=1842002952&ol=biz&z=13.64"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen
-                className="w-full h-full"
-                title="Карта местоположения"
-              />
+              <div style={{ position: 'relative', overflow: 'hidden', width: '100%', height: '100%' }}>
+                <a 
+                  href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" 
+                  style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '0px' }}
+                >
+                  Санкт‑Петербург
+                </a>
+                <a 
+                  href="https://yandex.ru/maps/2/saint-petersburg/house/aerodromnaya_ulitsa_8/Z0kYdA5jT0IGQFtjfXV4d3RgYA==/?ll=30.293671%2C59.996835&utm_medium=mapframe&utm_source=maps&z=17.27" 
+                  style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '14px' }}
+                >
+                  Аэродромная улица, 8 — Яндекс Карты
+                </a>
+                <iframe 
+                  src="https://yandex.ru/map-widget/v1/?ll=30.293671%2C59.996835&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5MjQ4MxJR0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JDRjdGA0L7QtNGA0L7QvNC90LDRjyDRg9C70LjRhtCwLCA4IgoNclnyQRXC_G9C&z=17.27" 
+                  width="100%" 
+                  height="100%" 
+                  frameBorder="1" 
+                  allowFullScreen 
+                  style={{ position: 'relative' }}
+                  title="Карта местоположения ЧИП ЛОГИК ПЛЮС"
+                />
+              </div>
             </div>
           </div>
         </div>

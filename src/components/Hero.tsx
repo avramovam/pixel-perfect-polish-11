@@ -23,7 +23,7 @@ export const Hero = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-heading mb-4 sm:mb-6 leading-tight">
             <span className="text-white block mb-2">Группа компаний</span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-white via-sky to-white bg-clip-text text-transparent">
+            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#0395ee]">
               ЧИП ЛОГИК ПЛЮС
             </span>
           </h1>
@@ -34,18 +34,18 @@ export const Hero = () => {
             <Button
               size="lg"
               onClick={() => scrollToSection("contacts")}
-              className="bg-gradient-to-r from-primary to-dark hover:from-dark hover:to-primary text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl text-sm sm:text-base md:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 w-full sm:w-auto whitespace-nowrap"
+              className="bg-gradient-to-r from-primary to-dark hover:from-dark hover:to-primary text-white px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 rounded-xl text-base sm:text-lg md:text-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 w-full sm:w-auto whitespace-nowrap min-h-[60px] sm:min-h-[70px]"
             >
-              <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <Phone className="mr-3 h-5 w-5 sm:h-6 sm:w-6" />
               Связаться с&nbsp;нами
             </Button>
             <Button
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("capabilities")}
-              className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl text-sm sm:text-base md:text-lg font-semibold transition-all duration-500 w-full sm:w-auto whitespace-nowrap"
+              className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 rounded-xl text-base sm:text-lg md:text-xl font-semibold transition-all duration-500 w-full sm:w-auto whitespace-nowrap min-h-[60px] sm:min-h-[70px] hover:scale-105"
             >
-              <Lightbulb className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <Lightbulb className="mr-3 h-5 w-5 sm:h-6 sm:w-6" />
               Наши возможности
             </Button>
           </div>

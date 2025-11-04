@@ -33,7 +33,7 @@ export const About = () => {
             О&nbsp;компании
           </h2>
         </div>
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-start">
           <div className="space-y-6 sm:space-y-8">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary px-2">
               Многолетний опыт в&nbsp;ключевых направлениях
@@ -53,11 +53,11 @@ export const About = () => {
               ))}
             </div>
           </div>
-          <div className="relative order-first lg:order-last">
+          <div className="relative order-first lg:order-last h-full">
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-ocean to-primary rounded-full opacity-20 blur-xl" />
-            <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full overflow-hidden rounded-2xl shadow-2xl">
+            <div className="h-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] w-full overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200"
+                src="src/images/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg"
                 alt="О компании ЧИП ЛОГИК ПЛЮС"
                 className="w-full h-full object-cover"
               />

@@ -11,11 +11,16 @@ export const Partners = () => {
     }
   };
 
-  const partners = Array.from({ length: 8 }, (_, i) => ({
-    id: i + 1,
-    name: `Партнер ${i + 1}`,
-    image: `https://images.unsplash.com/photo-${1550000000000 + i * 100000}?q=80&w=200&h=100&fit=crop`
-  }));
+  const partners = [
+    { id: 1, name: "Партнер 1", image: "src/images/парт1.png" },
+    { id: 2, name: "Партнер 2", image: "src/images/парт2.jpg" },
+    { id: 3, name: "Партнер 3", image: "src/images/парт3.jpg" },
+    { id: 4, name: "Партнер 4", image: "src/images/парт4.png" },
+    { id: 5, name: "Партнер 5", image: "src/images/парт5.jpg" },
+    { id: 6, name: "Партнер 6", image: "src/images/парт6.png" },
+    { id: 7, name: "Партнер 7", image: "src/images/парт7.png" },
+    { id: 8, name: "Партнер 8", image: "src/images/парт8.jpg" }
+  ];
 
   return (
     <section id="partners" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-ice to-white relative overflow-hidden">
@@ -36,10 +41,12 @@ export const Partners = () => {
               key={partner.id}
               className="bg-white p-4 sm:p-5 md:p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex items-center justify-center min-h-[100px] sm:min-h-[110px] md:min-h-[120px]"
             >
-              <div className="text-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl text-primary font-bold mb-1 sm:mb-2">•</div>
-                <p className="text-[10px] sm:text-xs md:text-sm text-gray-600">{partner.name}</p>
-              </div>
+              {/* ВСТАВЬТЕ КАРТИНКУ ПАРТНЕРА ЗДЕСЬ */}
+              <img
+                src={partner.image}
+                alt={partner.name}
+                className="max-w-full max-h-12 sm:max-h-14 md:max-h-16 object-contain"
+              />
             </div>
           ))}
         </div>

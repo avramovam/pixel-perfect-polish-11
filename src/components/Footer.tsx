@@ -35,25 +35,24 @@ export const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">
           <div className="space-y-4 sm:space-y-6">
             <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-gradient-to-br from-ocean to-sky rounded-lg flex items-center justify-center flex-shrink-0">
-                {/* Место для логотипа */}
-                <span className="text-white font-bold text-lg sm:text-xl md:text-2xl">ЧЛ</span>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-gradient-to-br flex items-center justify-center flex-shrink-0">
+              {<img src="src/images/лого-no-bg-preview (carve.photos).png" alt="Логотип ЧИП ЛОГИК ПЛЮС" loading="lazy"></img>}
               </div>
-              <span className="text-lg sm:text-xl md:text-2xl font-bold text-ocean whitespace-nowrap">ЧИП&nbsp;ЛОГИК&nbsp;ПЛЮС</span>
+              <span className="text-lg sm:text-xl md:text-2xl font-bold text-white whitespace-nowrap">ЧИП&nbsp;ЛОГИК&nbsp;ПЛЮС</span>
             </div>
             <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed">
               Группа компаний «ЧИП ЛОГИК ПЛЮС» — профессиональные решения в&nbsp;области металлообработки, НИОКР, проектирования и&nbsp;поставок электронных компонентов.
             </p>
           </div>
 
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6">Компания</h3>
-            <ul className="space-y-2 sm:space-y-3">
+            <ul className="space-y-2 sm:space-y-3 flex-1">
               {companyLinks.map((link) => (
                 <li key={link.id}>
                   <button
                     onClick={() => scrollToSection(link.id)}
-                    className="text-sm sm:text-base text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 text-left block py-1 sm:py-2"
+                    className="text-sm sm:text-base text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 text-left block py-1 sm:py-2 w-full"
                   >
                     {link.label}
                   </button>
@@ -62,21 +61,21 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6">Контакты</h3>
-            <ul className="space-y-3 sm:space-y-4 text-gray-300">
+            <ul className="space-y-3 sm:space-y-4 text-gray-300 flex-1">
               <li
                 className="flex items-start cursor-pointer hover:text-white transition-colors"
                 onClick={() => copyToClipboard("197348, Россия, г. Санкт-Петербург, ул. Аэродромная, д. 8, лит. А")}
               >
-                <MapPin className="h-5 w-5 sm:h-6 sm:w-6 mr-2 sm:mr-3 mt-1 text-ocean flex-shrink-0" />
-                <span className="text-xs sm:text-sm md:text-base leading-relaxed">Санкт-Петербург, ул.&nbsp;Аэродромная, д.&nbsp;8</span>
+                <MapPin className="h-5 w-5 sm:h-6 sm:w-6 mr-2 sm:mr-3 mt-0.5 text-ocean flex-shrink-0" />
+                <span className="text-xs sm:text-sm md:text-base leading-relaxed flex-1">Санкт-Петербург, ул.&nbsp;Аэродромная, д.&nbsp;8</span>
               </li>
               <li className="flex items-start">
-                <Mail className="h-5 w-5 sm:h-6 sm:w-6 mr-2 sm:mr-3 mt-1 text-ocean flex-shrink-0" />
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6 mr-2 sm:mr-3 mt-0.5 text-ocean flex-shrink-0" />
                 <a
                   href="mailto:info@chiplogicplus.com"
-                  className="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors cursor-pointer break-all"
+                  className="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors cursor-pointer break-all flex-1"
                   onClick={(e) => {
                     e.preventDefault();
                     copyToClipboard("info@chiplogicplus.com");
@@ -86,10 +85,10 @@ export const Footer = () => {
                 </a>
               </li>
               <li className="flex items-start">
-                <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2 sm:mr-3 mt-1 text-ocean flex-shrink-0" />
+                <Phone className="h-5 w-5 sm:h-6 sm:w-6 mr-2 sm:mr-3 mt-0.5 text-ocean flex-shrink-0" />
                 <a
                   href="tel:+78123341218"
-                  className="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                  className="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-1"
                 >
                   +7&nbsp;(812)&nbsp;334-12-18
                 </a>

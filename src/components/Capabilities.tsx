@@ -46,7 +46,7 @@ export const Capabilities = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4 relative inline-block after:absolute after:bottom-[-15px] after:left-0 after:w-20 after:h-1 after:bg-gradient-to-r after:from-sky after:to-white after:rounded-full px-2">
             Поставка
           </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto mt-6 sm:mt-8 px-2 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-5xl mx-auto mt-6 sm:mt-8 px-2 leading-relaxed">
             Комплексный подход к&nbsp;поставкам электронных компонентов с&nbsp;гарантией качества
           </p>
         </div>
@@ -87,7 +87,7 @@ export const Capabilities = () => {
             <div className="relative h-[180px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
               <div className="absolute -top-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-gradient-to-br from-ocean to-transparent rounded-full opacity-20 blur-xl" />
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200"
+                src="src/images/umberto-jXd2FSvcRr8-unsplash.jpg"
                 alt="Электронные компоненты"
                 className="w-full h-full object-cover rounded-2xl shadow-2xl"
               />
@@ -95,7 +95,7 @@ export const Capabilities = () => {
             <div className="relative h-[180px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
               <div className="absolute -bottom-4 -left-4 w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 bg-gradient-to-br from-primary to-transparent rounded-full opacity-20 blur-xl" />
               <img
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=1200"
+                src="src/images/anne-nygard-cA8VTQeHU0c-unsplash.jpg"
                 alt="Пассивные элементы"
                 className="w-full h-full object-cover rounded-2xl shadow-2xl"
               />
