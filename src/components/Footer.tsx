@@ -34,8 +34,12 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           <div className="space-y-6">
-            <div className="flex items-center mb-6">
-              <span className="text-xl md:text-2xl font-bold">ЧИП ЛОГИК ПЛЮС</span>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-ocean to-sky rounded-lg flex items-center justify-center flex-shrink-0">
+                {/* Место для логотипа */}
+                <span className="text-white font-bold text-xl md:text-2xl">ЧЛ</span>
+              </div>
+              <span className="text-xl md:text-2xl font-bold text-ocean">ЧИП ЛОГИК ПЛЮС</span>
             </div>
             <p className="text-sm md:text-base text-gray-300 leading-relaxed">
               Группа компаний «ЧИП ЛОГИК ПЛЮС» — профессиональные решения в области металлообработки, НИОКР, проектирования и поставок электронных компонентов.

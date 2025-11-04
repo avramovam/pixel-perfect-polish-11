@@ -29,8 +29,12 @@ export const Header = () => {
     <>
       <header className="bg-white/80 backdrop-blur-md shadow-lg fixed w-full z-40 border-b border-gray-100">
         <div className="container mx-auto py-3 px-4 md:px-6 flex justify-between items-center">
-          <div className="flex items-center flex-shrink-0 min-w-0">
-            <span className="text-base md:text-lg lg:text-xl font-bold text-primary whitespace-nowrap">
+          <div className="flex items-center gap-3 flex-shrink-0 min-w-0">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-ocean to-sky rounded-lg flex items-center justify-center">
+              {/* Место для логотипа */}
+              <span className="text-white font-bold text-lg md:text-xl">ЧЛ</span>
+            </div>
+            <span className="text-base md:text-lg lg:text-xl font-bold text-ocean whitespace-nowrap">
               ЧИП ЛОГИК ПЛЮС
             </span>
           </div>
