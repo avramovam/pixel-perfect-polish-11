@@ -28,22 +28,22 @@ export const Header = () => {
   return (
     <>
       <header className="bg-white/80 backdrop-blur-md shadow-lg fixed w-full z-40 border-b border-gray-100">
-        <div className="container mx-auto py-3 px-4 md:px-6 flex justify-between items-center">
-          <div className="flex items-center gap-3 flex-shrink-0 min-w-0">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-ocean to-sky rounded-lg flex items-center justify-center">
+        <div className="container mx-auto py-2 sm:py-3 px-3 sm:px-4 md:px-6 flex justify-between items-center">
+          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-br from-ocean to-sky rounded-lg flex items-center justify-center flex-shrink-0">
               {/* Место для логотипа */}
-              <span className="text-white font-bold text-lg md:text-xl">ЧЛ</span>
+              <span className="text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl">ЧЛ</span>
             </div>
-            <span className="text-base md:text-lg lg:text-xl font-bold text-ocean whitespace-nowrap">
-              ЧИП ЛОГИК ПЛЮС
+            <span className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-ocean whitespace-nowrap">
+              ЧИП&nbsp;ЛОГИК&nbsp;ПЛЮС
             </span>
           </div>
-          <nav className="hidden lg:flex space-x-6">
+          <nav className="hidden lg:flex space-x-4 xl:space-x-6">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="relative text-primary text-sm font-medium py-2 hover:text-ocean transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-ocean hover:after:w-full after:transition-all after:duration-300"
+                className="relative text-primary text-xs xl:text-sm font-medium py-2 hover:text-ocean transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-ocean hover:after:w-full after:transition-all after:duration-300 whitespace-nowrap"
               >
                 {link.label}
               </button>
