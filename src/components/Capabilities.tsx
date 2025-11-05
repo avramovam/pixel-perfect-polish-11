@@ -87,7 +87,7 @@ export const Capabilities = () => {
             <div className="relative h-[180px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
               <div className="absolute -top-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-gradient-to-br from-ocean to-transparent rounded-full opacity-20 blur-xl" />
               <img
-                src="src/images/umberto-jXd2FSvcRr8-unsplash.jpg"
+                src="/src/images/umberto-jXd2FSvcRr8-unsplash.jpg"
                 alt="Электронные компоненты"
                 className="w-full h-full object-cover rounded-2xl shadow-2xl"
               />
@@ -95,7 +95,7 @@ export const Capabilities = () => {
             <div className="relative h-[180px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
               <div className="absolute -bottom-4 -left-4 w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 bg-gradient-to-br from-primary to-transparent rounded-full opacity-20 blur-xl" />
               <img
-                src="src/images/anne-nygard-cA8VTQeHU0c-unsplash.jpg"
+                src="/src/images/anne-nygard-cA8VTQeHU0c-unsplash.jpg"
                 alt="Пассивные элементы"
                 className="w-full h-full object-cover rounded-2xl shadow-2xl"
               />

@@ -12,14 +12,14 @@ export const Partners = () => {
   };
 
   const partners = [
-    { id: 1, name: "Партнер 1", image: "src/images/парт1.png" },
-    { id: 2, name: "Партнер 2", image: "src/images/парт2.jpg" },
-    { id: 3, name: "Партнер 3", image: "src/images/парт3.jpg" },
-    { id: 4, name: "Партнер 4", image: "src/images/парт4.png" },
-    { id: 5, name: "Партнер 5", image: "src/images/парт5.jpg" },
-    { id: 6, name: "Партнер 6", image: "src/images/парт6.png" },
-    { id: 7, name: "Партнер 7", image: "src/images/парт7.png" },
-    { id: 8, name: "Партнер 8", image: "src/images/парт8.jpg" }
+    { id: 1, name: "Партнер 1", image: "/src/images/парт1.png" },
+    { id: 2, name: "Партнер 2", image: "/src/images/парт2.jpg" },
+    { id: 3, name: "Партнер 3", image: "/src/images/парт3.jpg" },
+    { id: 4, name: "Партнер 4", image: "/src/images/парт4.png" },
+    { id: 5, name: "Партнер 5", image: "/src/images/парт5.jpg" },
+    { id: 6, name: "Партнер 6", image: "/src/images/парт6.png" },
+    { id: 7, name: "Партнер 7", image: "/src/images/парт7.png" },
+    { id: 8, name: "Партнер 8", image: "/src/images/парт8.jpg" }
   ];
 
   return (
