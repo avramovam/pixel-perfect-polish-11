@@ -1,6 +1,6 @@
 export const Counter = () => {
   const stats = [
-    { number: "12 лет", label: "на рынке" },
+    { number: "с 2012 года", label: "на рынке" },
     { number: "100+", label: "Реализованных проектов" },
     { number: "5", label: "Производственных цехов" }
   ];

@@ -23,7 +23,7 @@ export const Footer = () => {
   const companyLinks = [
     { label: "О нас", id: "about" },
     { label: "Поставка", id: "capabilities" },
-    { label: "Производство", id: "production" },
+    { label: "Металлообработка", id: "production" },
     { label: "Опыт", id: "experience" },
     { label: "Партнёры", id: "partners" }
   ];

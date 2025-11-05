@@ -27,9 +27,7 @@ export const Hero = () => {
               ЧИП ЛОГИК ПЛЮС
             </span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed text-white/90 px-2">
-            Инжинирингово-производственная компания. Работаем с&nbsp;2012&nbsp;года.
-          </p>
+          
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-6 mb-12 sm:mb-14 md:mb-16 px-2">
             <Button
               size="lg"
