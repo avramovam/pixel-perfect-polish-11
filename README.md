@@ -1,10 +1,8 @@
-# Welcome to your Lovable project
-
 ## Project info
 
 **URL**: https://lovable.dev/projects/5434ae1d-535b-480f-842a-a04f1b9acd6b
 
-# Vite React site (no Lovable)
+# Vite React site 
 
 This repository is a Vite + React + TypeScript + Tailwind project. The Lovable boilerplate has been removed.
 
