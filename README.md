@@ -4,70 +4,46 @@
 
 **URL**: https://lovable.dev/projects/5434ae1d-535b-480f-842a-a04f1b9acd6b
 
-## How can I edit this code?
+# Vite React site (no Lovable)
 
-There are several ways of editing your application.
+This repository is a Vite + React + TypeScript + Tailwind project. The Lovable boilerplate has been removed.
 
-**Use Lovable**
+Quick local workflow
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5434ae1d-535b-480f-842a-a04f1b9acd6b) and start prompting.
+- Install dependencies:
 
-Changes made via Lovable will be committed automatically to this repo.
+```zsh
+cd /Users/macbook/chip-site2/pixel-perfect-polish-11
+npm install
+```
 
-**Use your preferred IDE**
+- Start dev server (hot reload):
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```zsh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+- Create a production build (output in `dist/`):
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```zsh
+npm run build
+```
 
-**Use GitHub Codespaces**
+After `npm run build`, the static site is ready in `dist/` and can be uploaded to any static-hosting or served by a web server.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
+Project layout highlights
+
+- `src/pages/Index.tsx` — single-page composition: imports header, hero, about, footer and other sections.
+- `src/components/*` — page sections (Header, Hero, About, etc.).
+- `src/components/ui/*` — UI primitives (shadcn/radix wrappers) used across components (`toaster`, `tooltip`, `sidebar`).
+- `src/hooks` and `src/lib/utils.ts` — small utilities and hooks used by components.
+- `public/` — static assets (favicon, robots.txt).
+
+Notes
+
+- Favicon files are served from `/favicon.ico` (Vite `public/` is served at the site root).
+- `lovable-tagger` integration and references were removed from the build configuration.
+- Use `npm` commands above to build. If you prefer `bun`, you can run `bun install` and `bun run build`, but this README uses `npm`.
+
+If anything in this README looks off for your environment, tell me and I'll adjust it.
 - Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5434ae1d-535b-480f-842a-a04f1b9acd6b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

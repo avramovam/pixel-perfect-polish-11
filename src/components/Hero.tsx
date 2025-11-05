@@ -27,7 +27,9 @@ export const Hero = () => {
               ЧИП ЛОГИК ПЛЮС
             </span>
           </h1>
-          
+          <p>
+                 
+          </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 md:gap-6 mb-12 sm:mb-14 md:mb-16 px-2">
             <Button
               size="lg"
