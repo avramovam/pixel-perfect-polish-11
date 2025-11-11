@@ -1,8 +1,8 @@
 import { Check } from "lucide-react";
-import umbertoImg from "@/images/umberto-jXd2FSvcRr8-unsplash.jpg";
-import anneImg from "@/images/anne-nygard-cA8VTQeHU0c-unsplash.jpg";
 
 export const Capabilities = () => {
+  const umbertoImg = "/images/umberto-jXd2FSvcRr8-unsplash.jpg";
+  const anneImg = "/images/anne-nygard-cA8VTQeHU0c-unsplash.jpg";
   const steps = [
     {
       number: "1",

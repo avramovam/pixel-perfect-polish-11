@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
-import p1 from "@/images/парт1.png";
-import p2 from "@/images/парт2.jpg";
-import p3 from "@/images/парт3.jpg";
-import p4 from "@/images/парт4.png";
-import p5 from "@/images/парт5.jpg";
-import p6 from "@/images/парт6.png";
-import p7 from "@/images/парт7.png";
-import p8 from "@/images/парт8.jpg";
+
 export const Partners = () => {
+  const p1 = "/images/парт1.png";
+  const p2 = "/images/парт2.jpg";
+  const p3 = "/images/парт3.jpg";
+  const p4 = "/images/парт4.png";
+  const p5 = "/images/парт5.jpg";
+  const p6 = "/images/парт6.png";
+  const p7 = "/images/парт7.png";
+  const p8 = "/images/парт8.jpg";
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {

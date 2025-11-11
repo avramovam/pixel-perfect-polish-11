@@ -1,9 +1,8 @@
-import chesterImg from "@/images/chester-oates-gHY2Upbsjek-unsplash.jpg";
-import hansImg from "@/images/hans-westbeek-fimoFLchbuk-unsplash.jpg";
-import cemrecanImg from "@/images/cemrecan-yurtman-qk2i7n39-B0-unsplash.jpg";
-import rizkyImg from "@/images/rizky-nuriman-Ws8SCmDS9mw-unsplash.jpg";
-
 export const Production = () => {
+  const chesterImg = "/images/chester-oates-gHY2Upbsjek-unsplash.jpg";
+  const hansImg = "/images/hans-westbeek-fimoFLchbuk-unsplash.jpg";
+  const cemrecanImg = "/images/cemrecan-yurtman-qk2i7n39-B0-unsplash.jpg";
+  const rizkyImg = "/images/rizky-nuriman-Ws8SCmDS9mw-unsplash.jpg";
   const services = [
     {
       title: "Металлообработка",

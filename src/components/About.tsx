@@ -1,7 +1,7 @@
 import { Building2, Lightbulb, PenTool, Search } from "lucide-react";
-import aboutImg from "@/images/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg";
 
 export const About = () => {
+  const aboutImg = "/images/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg";
   const features = [
     {
       icon: Building2,

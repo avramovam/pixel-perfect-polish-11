@@ -1,8 +1,8 @@
 import { MapPin, Mail, Phone } from "lucide-react";
-import logoImg from "@/images/лого-no-bg-preview (carve.photos).png";
 import { toast } from "sonner";
 
 export const Footer = () => {
+  const logoImg = "/images/лого-no-bg-preview (carve.photos).png";
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {

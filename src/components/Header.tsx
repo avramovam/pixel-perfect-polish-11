@@ -1,10 +1,10 @@
 import { useState } from "react";
-import logoImg from "@/images/лого-no-bg-preview (carve.photos).png";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const logoImg = "/images/лого-no-bg-preview (carve.photos).png";
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
