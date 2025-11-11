@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/pixel-perfect-polish-11/",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
