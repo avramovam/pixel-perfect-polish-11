@@ -1,24 +1,29 @@
+import metalImage from "@/images/chester-oates-gHY2Upbsjek-unsplash.jpg";
+import stampingImage from "@/images/hans-westbeek-fimoFLchbuk-unsplash.jpg";
+import laserImage from "@/images/cemrecan-yurtman-qk2i7n39-B0-unsplash.jpg";
+import weldingImage from "@/images/rizky-nuriman-Ws8SCmDS9mw-unsplash.jpg";
+
 export const Production = () => {
   const services = [
     {
       title: "Металлообработка",
       description: "Фрезерные и токарные станки с ЧПУ, карусельные работы",
-      image: "/src/images/chester-oates-gHY2Upbsjek-unsplash.jpg"
+      image: metalImage
     },
     {
       title: "Штамповка",
       description: "Холодная и горячая штамповка, гидравлические прессы",
-      image: "/src/images/hans-westbeek-fimoFLchbuk-unsplash.jpg"
+      image: stampingImage
     },
     {
       title: "Лазерная резка",
       description: "Лазерные станки 4КВт, электроэрозионная обработка",
-      image: "/src/images/cemrecan-yurtman-qk2i7n39-B0-unsplash.jpg"
+      image: laserImage
     },
     {
       title: "Сварка",
       description: "Сварка нержавеющей стали и титана, аттестованные специалисты",
-      image: "/src/images/rizky-nuriman-Ws8SCmDS9mw-unsplash.jpg"
+      image: weldingImage
     }
   ];
 

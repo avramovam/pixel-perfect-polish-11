@@ -1,4 +1,12 @@
 import { Button } from "@/components/ui/button";
+import partner1 from "@/images/парт1.png";
+import partner2 from "@/images/парт2.jpg";
+import partner3 from "@/images/парт3.jpg";
+import partner4 from "@/images/парт4.png";
+import partner5 from "@/images/парт5.jpg";
+import partner6 from "@/images/парт6.png";
+import partner7 from "@/images/парт7.png";
+import partner8 from "@/images/парт8.jpg";
 
 export const Partners = () => {
   const scrollToSection = (sectionId: string) => {
@@ -12,14 +20,14 @@ export const Partners = () => {
   };
 
   const partners = [
-    { id: 1, name: "Партнер 1", image: "/src/images/парт1.png" },
-    { id: 2, name: "Партнер 2", image: "/src/images/парт2.jpg" },
-    { id: 3, name: "Партнер 3", image: "/src/images/парт3.jpg" },
-    { id: 4, name: "Партнер 4", image: "/src/images/парт4.png" },
-    { id: 5, name: "Партнер 5", image: "/src/images/парт5.jpg" },
-    { id: 6, name: "Партнер 6", image: "/src/images/парт6.png" },
-    { id: 7, name: "Партнер 7", image: "/src/images/парт7.png" },
-    { id: 8, name: "Партнер 8", image: "/src/images/парт8.jpg" }
+    { id: 1, name: "Партнер 1", image: partner1 },
+    { id: 2, name: "Партнер 2", image: partner2 },
+    { id: 3, name: "Партнер 3", image: partner3 },
+    { id: 4, name: "Партнер 4", image: partner4 },
+    { id: 5, name: "Партнер 5", image: partner5 },
+    { id: 6, name: "Партнер 6", image: partner6 },
+    { id: 7, name: "Партнер 7", image: partner7 },
+    { id: 8, name: "Партнер 8", image: partner8 }
   ];
 
   return (
