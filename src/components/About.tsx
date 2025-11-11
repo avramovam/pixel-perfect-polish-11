@@ -1,4 +1,5 @@
 import { Building2, Lightbulb, PenTool, Search } from "lucide-react";
+import aboutImg from "@/images/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg";
 
 export const About = () => {
   const features = [
@@ -57,7 +58,7 @@ export const About = () => {
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-ocean to-primary rounded-full opacity-20 blur-xl" />
             <div className="h-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] w-full overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="src/images/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg"
+                src={aboutImg}
                 alt="О компании ЧИП ЛОГИК ПЛЮС"
                 className="w-full h-full object-cover"
               />

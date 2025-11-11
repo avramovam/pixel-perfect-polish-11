@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoImg from "@/images/лого-no-bg-preview (carve.photos).png";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -31,7 +32,7 @@ export const Header = () => {
         <div className="container mx-auto py-2 sm:py-3 px-3 sm:px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
             <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-              {<img src="/src/images/лого-no-bg-preview (carve.photos).png" alt="Логотип ЧИП ЛОГИК ПЛЮС" loading="lazy"></img>}
+              {<img src={logoImg} alt="Логотип ЧИП ЛОГИК ПЛЮС" loading="lazy" />}
             </div>
             <span className="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-[#152863]">
               ЧИП&nbsp;ЛОГИК&nbsp;ПЛЮС

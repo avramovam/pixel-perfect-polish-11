@@ -1,4 +1,5 @@
 import { MapPin, Mail, Phone } from "lucide-react";
+import logoImg from "@/images/лого-no-bg-preview (carve.photos).png";
 import { toast } from "sonner";
 
 export const Footer = () => {
@@ -36,7 +37,7 @@ export const Footer = () => {
           <div className="space-y-4 sm:space-y-6">
             <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
               <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-gradient-to-br flex items-center justify-center flex-shrink-0">
-              {<img src="/src/images/лого-no-bg-preview (carve.photos).png" alt="Логотип ЧИП ЛОГИК ПЛЮС" loading="lazy"></img>}
+              {<img src={logoImg} alt="Логотип ЧИП ЛОГИК ПЛЮС" loading="lazy" />}
               </div>
               <span className="text-lg sm:text-xl md:text-2xl font-bold text-white whitespace-nowrap">ЧИП&nbsp;ЛОГИК&nbsp;ПЛЮС</span>
             </div>
